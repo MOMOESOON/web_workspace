@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 프로퍼티</title>
+<style type="text/css">
+/* 선택지는 태그 등 다양한 형식이 있습니다.*/
+/* th,td 태그에 설정하는 스타일*/
+th, td {
+	border: 1px solid gray;
+	padding: 20px 10px;
+}
+
+th {
+	background-color: tomato;
+	color: white;
+	text-align: center;
+}
+/* td 태그들 중에 3번째 자식태그들은 텍스트 정렬을 왼쪽으로 합니다.*/
+td:nth-child(3) {
+	text-align: left;
+}
+
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 60px;
+}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<!-- style 태그에서 설정한 width 는 무시되고 태그의 값이 적용됩니다. 단,값이 작아지는 것은 적용 안됨.-->
+			<th>번호</th>
+			<th style="width: 200px;">키워드</th>
+			<th style="width: 400px;">설명</th>
+			<th style="width: 400px;">사용법</th>
+
+		</tr>
+		<tr>
+			<!-- tr:행(줄) -->
+			<td>1</td>
+			<!-- td:열(칸) -->
+			<td>width-height</td>
+
+			<td>가로 길이, 세로 길이를 의미 값을 정의 할떄는 "100px" 처럼 숫자뒤에 단위를 표시하여 적습니다.</td>
+			<td>#box{ width: 100px; height: 60px }</td>
+		</tr>
+		<tr>
+			<!-- tr:행(줄) -->
+			<td>2</td>
+			<!-- td:열(칸) -->
+			<td>margin-padding</td>
+			<td>각각 바깥쪽 여백, 안쪽 여백을 의미합니 숫자뒤에 단위를 표시하여 적습니다. border을 경계로 나뉩니다.</td>
+			<td>#box{ margin: 10px; padding: 20px }</td>
+		</tr>
+		<tr>
+			<!-- tr:행(줄) -->
+			<td>3</td>
+			<!-- td:열(칸) -->
+			<td>color</td>
+			<td>색상,정확히는 글자의 색상을 의미합니다. color 속성은 위 목록등의 값을 사용할 수 있으며, 기본값은
+				inherit으로 부모의 색상을 가져옵니다.</td>
+			<td>#text1 { color: red; }<br> #text2 { color: #0A0; }<br>
+				#text3 { color: rgb(0, 0, 150); }<br> #text4 { color: rgba(30,
+				150, 100, 0.5); }<br></td>
+
+		</tr>
+		<tr>
+			<!-- tr:행(줄) -->
+			<td>4</td>
+			<!-- td:열(칸) -->
+			<td>font</td>
+			<td>font 속성은 글자의 폰트를 정의하는 속성인데, 여러 기능을 동시에 가지고 있는 속성이기도 합니다. 정확히
+				말하면 6개의 세부적인 글꼴 관련 속성을 font라는 하나의 속성에 한 번에 쓸 수 있다.</td>
+			<td>.box1 { font-size: 20px;<br> font-family:
+				나눔고딕,NanumGothic,돋움,Dotum;<br> }<br> .box1 .title {
+				font-weight: bold }<br> .ex1 { font: 15px NanumGothic,
+				sans-serif }<br> .ex2 { font: italic bold 12px/30px Dotum,
+				sans-serif }<br></td>
+		</tr>
+		<tr>
+			<!-- tr:행(줄) -->
+			<td>5</td>
+			<!-- td:열(칸) -->
+			<td>text-align</td>
+			<td>text-align 속성은 텍스트의 정렬 방향을 의미합니다
+				<ul>
+					<li>left:왼쪽 정렬</li>
+					<li>right:오른쪽 정렬</li>
+					<li>center:중앙 정렬</li>
+					<li>justify:양쪽 정렬(자동 줄바꿈시 오른쪽 경계선 부분정리)</li>
+				</ul>
+			</td>
+			<td>#box1 { text-align: right; }<br> #box2 { text-align:
+				left; }<br> #box3 { text-align: center; }<br></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>background</td>
+			<td>background 속성은 태그의 배경을 지정하는 속성으로, <br> font 속성과 비슷하게
+				세부적인 속성들을 한번에 쓸 수 있는 속성입니다.
+				<ul>
+					<li>background-color - 배경색</li>
+					<li>background-image - 배경이미지</li>
+					<li>background-repeat - 배경 이미지 반복 여부</li>
+					<li>background-position - 배경 이미지 위치</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

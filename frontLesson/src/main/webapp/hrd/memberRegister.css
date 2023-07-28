@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* 블럭 요소의 width는 기본이 화면의 100, height는 컨텐츠 크기만큼. 높이는 padding으로 정하기*/
+
+
+
+	
+section table {
+	border-collapse: collapse;
+	margin: auto;
+	}
+	
+section h3 {
+	text-align: center;
+}
+
+section th {
+	width: 180px;
+}
+
+section th:nth-child(3) {
+	width: 250px;
+	}
+	
+section td:nth-child(4) {
+	width: 300px;
+	}
+	
+section th:nth-child(5) {
+	width: 250px;
+	}
+	
+section th, td{
+	border: 1px solid black;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+section th {
+	font-weight: bold;
+}
+	
